@@ -1,16 +1,19 @@
-h1{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3.5rem;  
-    line-height: 1.5;  
+
+h1,h2,h3{
+    font-family: 'Montserrat';
     font-weight: 900;
+    line-height: 1.5;
 }
-#title{
-    background-color:#ff4c68;
-}
-.container-fluid{
-    padding:3% 15%;
+h1{
+    font-size: 3.5rem;    
 }
 
+#title{
+    background-color:#ff4c68;
+    padding:4% 15%;
+    position: relative;
+    overflow: hidden;
+}
 body{
    font-family: 'Montserrat', sans-serif;
 }
@@ -41,19 +44,19 @@ body{
 /* Title image */
 
 .title-image{
-    width: 44%;
+    width: 25%;
     transform: rotate(25deg);
     position: absolute;
-    left: 14%;
+    right: 15%;
 }
-.title-image-div{
+/* .title-image-div{
     position: relative;
-}
+    overflow: hidden;
+} */
+
 /* features section */
 .features-box{
     padding:7% 15%;
-    position: relative;
-    z-index: 1;
 }
 
 /* feature icon */
@@ -67,9 +70,6 @@ body{
 }
 .feature-text{
     font-size: 1.5rem;
-    font-family: 'Montserrat';
-    font-weight: 900;
-    line-height: 2;
 }
 .icon:hover{
     color: #ff4c68;
@@ -87,9 +87,6 @@ body{
     color: #fff;
 }
 h2{
-    font-family: 'Montserrat';
-    font-weight: 900;
-    line-height: 1.5;
     font-size: 3rem;
 }
 .testimonials-image{
@@ -126,12 +123,16 @@ h2{
     .title-image{
         position: static;
         transform: rotate(0deg);
+        width: 50%;
     }
     #title{
         text-align: center;
     }
+    .Download-button{
+        font-size: 1.2rem;
+    }
 }
-@media (max-width:1035px) and (min-width:768px){
+@media (max-width:1038px) and (min-width:768px){
     .title-content{
         width: 480px;
         margin-left: 10%;
@@ -152,25 +153,24 @@ h2{
     .title-image-div{
         margin-top: 5%;
     }
+    .test-head{
+        font-size: 2.5rem;
+    }
 }
 
 /* Call to action section */
 #cta{
     background-color: #ff4c68;
-    height: 50vh;
+    color: #fff;
     text-align: center;
-    padding:5% 20%;
-}
-.cta-button{
-    margin: 3% 1%;
+    padding:7% 15%;
 }
 #cta h3{
-    color: #fff;
-    font-family: 'Montserrat';
-    font-weight: 900;
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
-
+.cta-button{
+    margin:3% 2%;
+}
 @media (max-width:578px){
     #cta h3{
         font-size: 2rem;
@@ -182,9 +182,8 @@ h2{
 
 /* footer Section */
 #footer{
-    height: 30vh;
     text-align: center;
-    padding: 5%;
+    padding: 7% 15%;
 }
 #footer p{
     color: #8f8f8f;
@@ -200,4 +199,9 @@ h2{
 }
 .fa-envelope:hover{
     color: lightgreen;
+}
+
+/* image iphone */
+@media (max-width:1300px) and (min-width:1036){
+    
 }
